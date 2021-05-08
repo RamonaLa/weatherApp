@@ -1,0 +1,66 @@
+body{
+    background-color: rgba(79, 145, 145, 0.46);
+}
+
+#menu, #content, #contentForDays {
+    background-color: blanchedalmond;
+    padding: .8em;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.btn{
+    border-radius: 6px;
+    border: solid 1.7px rgb(110, 104, 104);
+    padding: .5em;
+    background-color: rgba(163, 206, 206, 0.912);
+    color: rgb(80, 87, 87);
+    font-weight: 700;
+    margin-top: -.4%;
+}
+
+#city {
+    padding: .5em;
+    width: 40%;
+    border-radius: 6px;
+    color: rgb(80, 87, 87);
+    font-weight: 700;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.invalid{
+    border: 2px solid red;
+}
+
+#mapBox{
+    position: relative;
+    margin-top: -12em;
+    margin-left: 14em;
+}
+
+#days{
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxWithData{
+    border-bottom: solid 2px grey;
+    text-align: center;
+    line-height: .9em;
+}
+
+
+#scaleText{
+    font-size: 1em;
+    color: rgb(127, 139, 139);
+    margin-top: 2%;
+
+}
+
+.form-control{
+    width: 15%;
+    display: inline-block;
+}

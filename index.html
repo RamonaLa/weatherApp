@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather app</title>
+</head>
+
+<body>
+    <div id="menu">
+      <input type="text" id="city" placeholder="ex. Berlin">
+      <input type="button" id="weather" class="btn" value="Afiseaza vremea">
+      <input type="button" id="weatherOnDays" class="btn" value="Afiseaza prognoza">
+
+      <br>
+      
+    <label id="scaleText" for="scale">Temperature scale:</label>
+    <select class="form-control form-control-sm" name="scale" id="scaleSelect">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+    </select>
+
+    </div>
+    
+
+    <section id="content">
+        <h2>Vremea acum</h2>
+        <hr>
+        <ul >
+            <li id="image"></li>
+            <li>Descriere: <span class="weatherData" id="description"></span></li>
+            <li>Umiditate: <span class="weatherData" id="humidity"></span></li>
+            <li>Presiune: <span class="weatherData" id="pressure"></span></li>
+            <li>Temperatura curenta: <span class="weatherData" id="temp"></span></li>
+            <li>Minima zilei: <span class="weatherData" id="minTemp"></span></li>
+            <li>Maxima zilei: <span class="weatherData" id="maxTemp"></span></li>
+
+        </ul>
+
+        <aside id="map"></aside>
+
+    </section>
+
+    <div id="contentForDays">
+        <h2>Vremea in urmatoarele zile</h2>
+        <hr>
+        <section id="days">
+            <div class="daysFromPage" id="day1"></div>
+            <div class="daysFromPage" id="day2"></div>
+            <div class="daysFromPage" id="day3"></div>
+            <div class="daysFromPage" id="day4"></div>
+            <div class="daysFromPage" id="day5"></div>
+            <div class="daysFromPage" id="day6"></div>
+        </section>
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
